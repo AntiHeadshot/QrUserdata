@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code generator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app" style="margin:100px">
+        Benutzername
+        <input id="username" v-model="username" />
+        <br/> Passwort
+        <input type="password" id="password" v-model="password" />
+        <br/>
+        <br/>
+        <img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(data) +'&choe=UTF-8&chld=M|0'" />
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
