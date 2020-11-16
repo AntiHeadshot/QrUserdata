@@ -17,10 +17,14 @@
         <br/> Passwort
         <input type="password" id="password" v-model="password" />
         <br/>
+        <br/>Tab <img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(dataTab) +'&choe=UTF-8&chld=M|0'" />
+        <br/> <br/> <br/> Carrige Return<img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(dataCr) +'&choe=UTF-8&chld=M|0'" />
+        <br/> <br/> <br/> Line Feed<img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(dataLf) +'&choe=UTF-8&chld=M|0'" />
+        <br/> <br/> <br/> CR LF<img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(dataCrLf) +'&choe=UTF-8&chld=M|0'" />
+        <br/> <br/> <br/> Vertical Tab<img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(dataVTab) +'&choe=UTF-8&chld=M|0'" />
         <br/>
-        <img :src="'https://chart.googleapis.com/chart?chs=256x256&cht=qr&chl='+ encodeURI(data) +'&choe=UTF-8&chld=M|0'" />
     </div>
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>

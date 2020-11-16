@@ -3,13 +3,21 @@
 var app5 = new Vue({
     el: '#app',
     data: {
-        data: 'nothing to see here',
+        dataTab: 'nothing to see here',
+        dataCr: "",
+        dataLf: "",
+        dataCrLf: "",
+        dataVTab: "",
         username: '',
         password: ''
     },
     methods: {
         updateData: function() {
-            this.data = this.username + '\t' + this.password;
+            this.dataTab = this.username + '\t' + this.password;
+            this.dataCr = this.username + '\r' + this.password;
+            this.dataLf = this.username + '\n' + this.password;
+            this.dataCrLf = this.username + '\r\n' + this.password;
+            this.dataVTab = this.username + '\v' + this.password;
         }
     },
     watch: {
